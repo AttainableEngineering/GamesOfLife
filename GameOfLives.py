@@ -27,7 +27,6 @@ def GenerateBoard():
                 row.append('1')  # 1
             elif ran == 2:
                 row.append('2')
-            # Extra spacing to start more seperate
             else:
                 row.append(' ')
 
