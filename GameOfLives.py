@@ -86,13 +86,11 @@ class Species:
                 if Species.nextboard[x][y] == self.breed and (numNeigbors == 2 or numNeigbors == 3):
                     # Same species with 2 or 3 neigbors stay alive
                     Species.nextboard[x][y] == self.breed
-                    print("hit1")
 
                 # Come to Life
                 elif Species.nextboard[x][y] == ' ' and numNeigbors == 3:
                     # Dead cells with 3 same neigbors come alive
                     Species.nextboard[x][y] = self.breed
-                    print("hit2")
 
                 # Over or UnderCrowding
                 elif numNeigbors > 3 or numNeigbors <= 1:
